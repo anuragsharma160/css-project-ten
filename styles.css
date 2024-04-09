@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Nova+Square&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  /* box-sizing: border-box; */
+}
+body{
+  background: url(./assets/background.png);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  position: relative;
+  position: fixed;
+  inset: 0;
+  padding: 1.5% 1% 0% 1%;
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+.nav-bar::after{
+  content: "";
+  width: 89%;
+  height: .2%;
+  left: 10%;
+  top: 14%;
+  background-color: #ffffff;
+  position: absolute;
+  opacity: 0.9;
+}
+
+.list{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 70%;
+}
+
+.contact{
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list::after{
+  content: "";
+  width: 100px;
+  height: 2px;
+  color: #ffffff;
+  position: absolute;
+}
+
+img[src="./assets/telephone-call-svgrepo-com.svg"]{
+  width: 10%;
+}
+
+.container{
+  margin-top: 2%;
+  position: relative;
+  height: 80%;
+}
+
+.left-container{
+  color: #ffffff;
+  position: absolute;
+  top: 15%;
+  margin-left: 2%;
+  width: 45%;
+}
+
+.left-container h1{
+  font-size: 4rem;
+}
+
+.left-container button{
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 1.5% 4%;
+  border-radius: 30px;
+  margin-top: 9%;
+}
+
+.puzzle{
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  background-color: rgba(255, 255, 255, 0.166);
+  width: 20%;
+  padding: 1%;
+  margin-bottom: 6%;
+}
+
+.puzzle::after{
+  content: "";
+  background-color: #ffffff;
+  height: 60%;
+  width: 0.5%;
+  position: absolute;
+  left: 75%;
+  top: 100%;
+  opacity: 0.5;
+}
+
+.puzzle::before{
+  content: "";
+  background-color: #ffffff;
+  height: 18%;
+  width: 8%;
+  border-radius: 50%;
+  position: absolute;
+  left: 71%;
+  top: 160%;
+}
+
+img[src="./assets/puzzle-svgrepo-com.svg"]{
+  background: #ffffff;
+  border-radius: 35px;
+  margin-bottom: 3%;
+  width: 20%;
+  padding: 1% 15%;
+}
+
+.bulb{
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 20%;
+  top: 47%;
+  padding: 1%;
+  width: 20%;
+  background-color: rgba(255, 255, 255, 0.166);
+}
+
+.bulb::before{
+  content: "";
+  background-color: #ffffff;
+  height: 14%;
+  width: 8%;
+  border-radius: 50%;
+  position: absolute;
+  left: 130%;
+  top: 42%;
+}
+
+.bulb::after{
+  content: "";
+  background-color: #ffffff;
+  height: 1%;
+  width: 30%;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  opacity: 0.5;
+}
+
+img[src="./assets/bulb.svg"]{
+  background: #ffffff;
+  width: 25%;
+  border-radius: 35px;
+  padding: 1% 17%;
+  margin-bottom: 6%;
+}
+
+@media screen and (max-width:480px){
+  html{
+    font-size: 50%;
+  }
+
+  body{
+    padding: 1px 2px;
+  }
+
+  .nav-bar{
+    align-items: flex-start;
+    flex-direction: column;
+    height: 13%;
+  }
+
+  .list{
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .contact{
+    width: 50%;
+  }
+
+  .left-container h1{
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width:481px) and (max-width:768px){
+  html{
+    font-size: 80%;
+  }
+}
